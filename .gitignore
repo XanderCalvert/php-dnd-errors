@@ -5,4 +5,4 @@ composer.lock
 *.swp
 *.swo
 *~
-
+/.phpunit.cache/

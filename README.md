@@ -70,9 +70,12 @@ Some ideas for future classes:
 
 ## Development
 
-This project uses PHP CodeSniffer with PSR-12 standard for code quality.
+This project uses PHP CodeSniffer with PSR-12 standard for code quality and PHPUnit for testing.
 
 ```bash
+# Run tests
+composer test
+
 # Check code style
 composer check
 
@@ -80,6 +83,7 @@ composer check
 composer fix
 
 # Or use vendor binaries directly
+vendor/bin/phpunit
 vendor/bin/phpcs --standard=PSR12 src/
 vendor/bin/phpcbf --standard=PSR12 src/
 ```
