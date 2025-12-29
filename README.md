@@ -54,6 +54,20 @@ $array = null;
 count($array);
 ```
 
+## TODO
+
+### Additional Classes
+
+We're planning to add more D&D classes as archetypes! If you'd like a specific class added sooner, feel free to open a pull request.
+
+Some ideas for future classes:
+- Bard
+- Cleric
+- Fighter
+- Rogue
+- Sorcerer
+- ...and more!
+
 ## Development
 
 This project uses PHP CodeSniffer with PSR-12 standard for code quality.
