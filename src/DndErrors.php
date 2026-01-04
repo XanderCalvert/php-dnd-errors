@@ -6,6 +6,7 @@ use Calvert\DndErrors\Archetype\ArchetypeInterface;
 use Calvert\DndErrors\Archetype\Paladin;
 use Calvert\DndErrors\Archetype\Wizard;
 use Calvert\DndErrors\Archetype\Ranger;
+use Calvert\DndErrors\Archetype\Bard;
 use ErrorException;
 use Throwable;
 
@@ -15,7 +16,7 @@ final class DndErrors
 
     /**
      * @param array $options {
-     *     @type string $archetype 'paladin'|'ranger'|'wizard'|'random'
+     *     @type string $archetype 'paladin'|'ranger'|'wizard'|'bard'|'random'
      *     @type bool   $exit Whether to exit after rendering uncaught errors. Default true.
      * }
      */
@@ -110,6 +111,7 @@ final class DndErrors
             'paladin' => new Paladin(),
             'wizard' => new Wizard(),
             'ranger' => new Ranger(),
+            'bard' => new Bard(),
         );
 
         if ($slug === 'random') {
